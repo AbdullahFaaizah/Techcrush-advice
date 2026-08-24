@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    font-family: "Bai Jamjuree";
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.container{
+    /* width: 100%; */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section{
+    padding: 80px 20px;
+}
+
+.first{
+    background-image: url(https://res.cloudinary.com/dksg8sstf/image/upload/q_auto/f_auto/v1776519224/bg-header-desktop_efjk0t.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.first img{
+    margin-bottom: 30px;
+}
+
+.first .container{
+    max-width: 700px;
+}
+
+.click{
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+button{
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+button:hover{
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+.iOS{
+    background-color: rgb(101, 206, 190);
+}
+
+.Mac{
+    background-color: rgb(136, 150, 255);
+}
+
+.second{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.third{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-top: 80px
+}
+
+.third img{
+    width: 100%;
+}
+
+.third-note{
+    text-align: left;
+    color: rgb(114, 117, 120);
+}
+
+.third-note div{
+    margin-bottom: 30px;
+}
+
+.middle{
+    padding-bottom: 20px;
+}
+
+.fourth-note{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.fourth-note img{
+    display: block;
+    margin: 40px auto;
+    width: 40px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.fourth-note div{
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+p{
+    color: hsl(201, 11%, 66%);
+    max-width: 500px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4{
+    color: hsl(210, 10%, 33%);
+}
+
+.fifth{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.sixth{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.footer{
+    background-color: rgb(245, 246, 248);
+    padding: 40px 0;
+}
+
+.footers{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer img{
+    width: 45px;
+    max-width: 600px;
+    margin: 0;
+}
+
+.footer-note{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px 40px;
+}
+
+.footer-note a{
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    font-size: 14px;
+}
+
+.footer a:hover{
+    color: rgb(157, 231, 220);
+}
+
+.social-logo{
+    display: flex;
+    gap: 20px;
+}
+
+.social-logo img{
+    width: 20px;
+    transition: 0.3s;
+}
+
+.social-logo a:hover img{
+    color: rgb(157, 231, 220);
+    opacity: 0.6;
+    filter: brightness(0) saturate(100%) invert(78%) sepia(27%) saturate(500%) hue-rotate(120deg);
+}
+
+@media (max-width: 780px) {
+
+    .first{
+        background-image: url(https://res.cloudinary.com/dksg8sstf/image/upload/q_auto/f_auto/v1776545426/bg-header-mobile_zszs2j.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    section{
+        padding: 25px 15px;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .click{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding: 0;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .third{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .third-note{
+        text-align: center;
+    }
+
+    .third img{
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .fourth-note {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .fifth{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .fifth img{
+        max-width: 140px;
+    }
+
+    .sixth{
+        padding: 40px 0;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    .footers{
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+        gap: 25px;
+    }
+
+    .footer-note{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 12px;
+    }
+
+    .social-logo{
+        justify-content: center;
+    }
+
+    .footer img{
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.container{
+    width: 100%;
+    max-width: 600%;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-areas: "one one" "two three";
+}
+
+.one{
+    background-color: green;
+    grid-area: one;
+}
+
+.two{
+    background-color: rgb(28, 0, 128);
+    grid-area: two;
+}
+
+.three{
+    background-color: rgb(128, 0, 83);
+    grid-area: three;
+}

@@ -1,0 +1,89 @@
+body{
+    background-color: hsl(34, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.container img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+h1{
+    font-family: (Young Serif);
+    color: hsl(24, 5%, 18%);
+    margin-top: 25px;
+}
+
+p{
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+}
+
+.time{
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.time h3{
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 10px;
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+    font-family: (Outfit);
+}
+
+ul, ol{
+    line-height: 2;
+    padding-left: 20px;
+    color: hsl(30, 10%, 34%);
+}
+
+li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+strong{
+    color: hsl(24, 5%, 18%);
+}
+
+table{
+    border-collapse: collapse;
+    width: 700px;
+    margin-top: 20px;
+}
+
+hr{
+    color:hsl(14, 45%, 36%);
+}
+
+table tr{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+table td{
+    padding: 15px 10px;
+}
+
+.last{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.first{
+    color: hsl(30, 10%, 34%);
+}

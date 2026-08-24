@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to Css</title>
+    <style>
+      h1 {
+        color: pink;
+        font-size: 20px;
+      }
+      .example1 {
+        color: brown;
+        font-size: 23px;
+      }
+      #example2 {
+        color: greenyellow;
+        font-size: 23px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <button type="submit">Submit</button>
+    </form>
+    <!-- You could also have this, which is wrong for usage because it exposes sensitive data in the URL: -->
+    <form action="/submit" method="get">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <div>
+      <h1 style="color: blue; font-size: 24px">Example of inline Css</h1>
+    </div>
+
+    <div>
+      <h1>Example of internal css</h1>
+      <p class="example1">This is just a random text</p>
+      <p id="example2">This is another random text</p>
+    </div>
+
+    <div>
+      <h1 class="external1">This is an example of external css</h1>
+       <p class="external2">This is an example of external css</p>
+    </div>
+  </body>
+</html>

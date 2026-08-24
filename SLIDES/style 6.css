@@ -1,0 +1,80 @@
+button {
+  background: blue;
+  color: white;
+  /* 10px means top and bottom while 20px means left and right */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 40px;
+}
+
+button:hover {
+  background: red;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background-color: blueviolet;
+  transition: 0.3s;
+  margin-bottom: 40px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Media queries */
+
+/* Desktop first  */
+.box {
+  background-color: blue;
+  height: 140px;
+  width: 140px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  /* mobile */
+  .box {
+    background-color: red;
+  }
+}
+
+/* Mobile first */
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 127, 180);
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(165, 255, 127);
+}
+
+@media (min-width: 600px) {
+  .flex {
+    flex-direction: row;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}

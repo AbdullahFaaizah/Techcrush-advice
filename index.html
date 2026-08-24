@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full bg-[#f4f6fb]">
+  <div class="mx-auto max-w-[1440px] h-[620px] flex overflow-hidden">
+    <!-- LEFT PANEL -->
+    <aside class="w-[420px] bg-white border-r border-[#e7e7ea] p-5 overflow-auto">
+      <a href="#" class="inline-flex items-center gap-2 text-[#5b3fe6] font-extrabold text-sm hover:underline">
+        <!-- back icon (replace with your asset) -->
+        <img src="assets/icons/back-arrow.svg" alt="" class="w-4 h-4" />
+        <span>Back</span>
+      </a>
+
+      <h1 class="mt-3 text-[22px] font-extrabold text-[#14131a]">Goa Beach Vacation</h1>
+
+      <div class="mt-4 space-y-3">
+        <div class="flex gap-8">
+          <div class="w-[140px] text-[#2b2b33] font-extrabold text-sm">Destination</div>
+          <div class="flex-1 text-[#3b3b44] font-semibold text-sm">Goa, India</div>
+        </div>
+
+        <div class="flex gap-8">
+          <div class="w-[140px] text-[#2b2b33] font-extrabold text-sm">Travel Dates</div>
+          <div class="flex-1 text-[#3b3b44] font-semibold text-sm">May 20, 2025 - May 27, 2025</div>
+        </div>
+
+        <div class="flex gap-8">
+          <div class="w-[140px] text-[#2b2b33] font-extrabold text-sm">Accommodation</div>
+          <div class="flex-1 text-[#3b3b44] font-semibold text-sm">Taj Resort &amp; Spa, Goa</div>
+        </div>
+
+        <div class="flex gap-8">
+          <div class="w-[140px] text-[#2b2b33] font-extrabold text-sm">Trip Type</div>
+          <div class="flex-1 text-[#3b3b44] font-semibold text-sm">Leisure</div>
+        </div>
+      </div>
+
+      <h2 class="mt-6 text-sm font-black text-[#14131a]">Emergency Contacts</h2>
+
+      <div class="mt-2 border border-[#e6e6ef] rounded-lg p-3">
+        <!-- Contact Row -->
+        <div class="flex items-center gap-3 py-2">
+          <img src="assets/avatars/emma.jpg" alt="Emma Wilson" class="w-10 h-10 rounded-full border-2 border-[#f3f4f9] object-cover" />
+          <div class="flex-1">
+            <div class="text-xs font-black text-[#1a1822]">Emma Wilson</div>
+            <div class="text-[11px] text-[#8a8696] font-medium">Mother</div>
+          </div>
+          <div class="text-xs font-black text-[#1a1822] whitespace-nowrap">+91 98765 43210</div>
+        </div>
+
+        <div class="border-t border-[#f0f0f6] my-1"></div>
+
+        <!-- Contact Row -->
+        <div class="flex items-center gap-3 py-2">
+          <img src="assets/avatars/david.jpg" alt="David Wilson" class="w-10 h-10 rounded-full border-2 border-[#f3f4f9] object-cover" />
+          <div class="flex-1">
+            <div class="text-xs font-black text-[#1a1822]">David Wilson</div>
+            <div class="text-[11px] text-[#8a8696] font-medium">Brother</div>
+          </div>
+          <div class="text-xs font-black text-[#1a1822] whitespace-nowrap">+91 98765 43210</div>
+        </div>
+
+        <div class="border-t border-[#f0f0f6] my-1"></div>
+
+        <!-- Contact Row -->
+        <div class="flex items-center gap-3 py-2">
+          <img src="assets/avatars/sarah.jpg" alt="Sarah Greene" class="w-10 h-10 rounded-full border-2 border-[#f3f4f9] object-cover" />
+          <div class="flex-1">
+            <div class="text-xs font-black text-[#1a1822]">Sarah Greene</div>
+            <div class="text-[11px] text-[#8a8696] font-medium">Best Friend</div>
+          </div>
+          <div class="text-xs font-black text-[#1a1822] whitespace-nowrap">+91 98765 43210</div>
+        </div>
+      </div>
+
+      <div class="mt-5 flex gap-4">
+        <button class="flex-1 h-10 rounded-lg border border-[#7c5cff] text-[#5b3fe6] font-black text-sm bg-white">
+          Edit Trip
+        </button>
+        <button class="flex-1 h-10 rounded-lg bg-[#5b3fe6] text-white font-black text-sm">
+          Start Monitoring
+        </button>
+      </div>
+    </aside>
+
+    <!-- RIGHT PANEL (MAP) -->
+    <main class="flex-1 bg-white relative overflow-hidden">
+      <!-- Option A: Use exported static map image from Figma -->
+      <img
+        src="assets/maps/goa-map.png"
+        alt="Goa map"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      
+      <!-- If your Figma has a separate pin/label overlay, place it here -->
+      <div class="absolute inset-0 pointer-events-none">
+        <!-- Example overlay (remove if your PNG already includes it) -->
+        <img src="assets/icons/location-pin.svg" alt="" class="absolute left-[46%] top-[43%] w-7 h-7" />
+        <div class="absolute left-[44%] top-[52%] rounded-full bg-white/90 border border-black/5 px-3 py-1 text-xs font-bold text-[#3a3a44]">
+          Goa, India
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Mobile stacking -->
+  <style>
+    /* (Optional) If your Tailwind build doesn't include arbitrary breakpoints, ignore this.
+       Layout still stacks naturally if you adjust classes below. */
+  </style>
+</div>
+</body>
+</html>

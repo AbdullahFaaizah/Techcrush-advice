@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer></script>
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+    <style>
+    body{
+        font-family: "manrope", sans-serif;
+    }
+</style>
+</head>
+
+<body class="bg-[#1f2632] flex justify-center items-center 
+min-h-screen p-6 sm:p-0">
+    <div class="bg-[#323a49] w-full max-w-md shadow-lg p-4 flex flex-col
+    justify-center items-center text-center rounded-2xl space-y-4 pb-16
+    relative">
+        <p class="text-[#52ffa8] uppercase text-xs font-semibold"
+        id="id">
+            <!-- advice #117 -->
+        </p>
+        <p class="text-gray-200 font-bold text-xl leaading-relaxed w-full
+        max-w-xs"
+        id="advice">
+            <!-- "It is easy to sit up and take notice, what's difficult
+            is getting up and taking action." -->
+        </p>
+        <div class="2-full flex justify-center">
+            <img src="./pattern-divider-desktop.svg" alt="destop pattern"
+            class="hidden md:block">
+        </div>
+        <div class="2-full flex justify-center">
+            <img src="./pattern-divider-mobile.svg" alt="mobile pattern"
+            class="block md:hidden">
+        </div>
+        <button class="bg-[#52ffa8] p-4 rounded-full absolute -bottom-5 
+        opacity-75 hover:opacity-100"
+        id="btn">
+            <img src="./icon-dice.svg" alt="dice">
+        </button>
+    </div>
+</body>
+</html>

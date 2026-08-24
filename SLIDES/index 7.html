@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="p-4 bg-[#0d1117] rounded-lg"></div>
+
+    <div class="p-4 m-4 bg-blue-300">Box</div>
+
+    <div class="pt-4 pl-2 pr-6 pb-1 bg-red-300">Random paddings</div>
+
+    <div>
+      <p class="py-10">Hello</p>
+      <p class="px-20 text-blue-400">World</p>
+    </div>
+
+    
+
+    <div>
+      <h1 class="text-3xl font-light">Heading</h1>
+      <h1 class="text-3xl font-semibold">Heading</h1>
+      <h1 class="text-3xl font-bold text-green-300">Heading</h1>
+    </div>
+
+    <div class="flex justify-between items-center p-4 bg-gray-200">
+      <p>Logo</p>
+      <p>Menu</p>
+    </div>
+
+    <div class="m-4 bg-green-300 w-1/3 h-32">width</div>
+
+    <div class="w-1/3 h-32 bg-gray-400 m-4 border border-red-900">Card</div>
+
+    <div class="w-16 h-16 bg-blue-400 m-4 rounded-full">Card</div>
+
+    <button class="m-4 bg-blue-500 p-2 text-white rounded hover:bg-blue-700">
+      Click me
+    </button>
+
+    <div class="p-4 bg-red-300 sm:bg-orange-400 md:bg-blue-300 lg:bg-green-300">
+      Responsive
+    </div>
+    <div class="p-4 bg-gray-800 text-white flex justify-evenly">
+      <h1 class="text-lg font-bold">My site</h1>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-gray-300">Home</a> <a href="#">About</a>
+      </div>
+    </div>
+
+    <!-- Grid -->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+      <div class="bg-red-300 p-4 col-span-3">Header</div>
+      <div class="bg-blue-300 p-4">1</div>
+      <div class="bg-blue-300 p-4">2</div>
+      <div class="bg-blue-300 p-4">3</div>
+      <div class="bg-blue-300 p-4">4</div>
+    </div>
+    <p class="text-3xl font-serif">Font family</p>
+  </body>
+</html>
